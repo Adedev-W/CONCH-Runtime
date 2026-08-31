@@ -10,6 +10,11 @@
 Production-oriented FastAPI runtime for [CONCH](https://github.com/Mahmoodlab/CONCH), a vision-language foundation model for human pathology. Send one pathology image and a list of candidate descriptions to rank the descriptions by image-text similarity.
 
 <p align="center">
+  <em>“Akalmu diberikan untuk membuka rahasia langit.”</em>
+  <br><br>
+  — Prof. Bagus Muljadi
+</p>
+<p align="center">
   <img src="docs/Architecture_overview.png" width="720" alt="CONCH Runtime architecture overview">
 </p>
 
