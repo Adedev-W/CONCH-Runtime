@@ -1,0 +1,61 @@
+# Python
+*.py[cod]
+__pycache__/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.agents/
+.codex.
+# Environments and secrets
+.venv/
+.env
+.env.*
+!.env.example
+
+# Build artifacts
+build/
+dist/
+*.whl
+
+# Model checkpoints and caches
+models/
+checkpoints/
+*.pt
+*.pth
+*.bin
+*.ckpt
+*.safetensors
+*.h5
+*.hdf5
+.cache/
+huggingface/
+
+# Local datasets and outputs
+data/
+datasets/
+outputs/
+runs/
+wandb/
+mlruns/
+tensorboard/
+*.csv
+*.parquet
+
+# Local images
+*.jpg
+*.jpeg
+*.tif
+*.tiff
+!sample.jpg
+
+# OS and IDE files
+.DS_Store
+Thumbs.db
+.idea/
+
+AGENTS.md

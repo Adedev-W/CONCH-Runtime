@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "conch"
+version = "0.1.0"
+description = "CONCH: a vision language foundation model for human pathology."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.13,<3.14"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: CC BY-NC-ND 4.0",
+]
+
+dependencies = [
+    "torch>=2.13,<2.14", "torchvision>=0.28,<0.29",
+    "transformers>=5.16.1,<6", "tokenizers",
+    "numpy", "scikit-learn", "timm>=1.0.29,<1.1",
+    "regex", "ftfy", "h5py", "pandas",
+    "huggingface-hub", "Pillow", "tqdm",
+    "python-dotenv"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9"]
+api = ["fastapi==0.141.1", "uvicorn==0.52.4"]
+
+[tool.setuptools.packages.find]
+exclude = ["assets*", "benchmark*", "docs", "dist*", "scripts*", "tests*", "checkpoints*"]
+
+[tool.wheel]
+exclude = ["assets*", "benchmark*", "docs", "dist*", "scripts*", "tests*", "checkpoints*"]
